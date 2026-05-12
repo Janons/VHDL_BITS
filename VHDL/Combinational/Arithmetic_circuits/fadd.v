@@ -1,4 +1,4 @@
-module top_module( 
+module full_adder( 
     input a, b, cin,
     output cout, sum );
     
