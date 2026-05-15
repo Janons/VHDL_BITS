@@ -19,3 +19,10 @@ module eight_bit_binary_adder(
     full_adder fa7 (.a(a[7]), .b(b[7]), .cin(carry[6]), .sum(sum[7]), .cout(cout));
 
 endmodule
+
+module full_adder (input a, b, cin,
+    output cout, sum );
+    
+	assign cout = a&b | b&cin | a&cin;
+	assign sum  = a^b^cin;
+endmodule
